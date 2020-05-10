@@ -1,4 +1,4 @@
-# ReadMeNext_Project
+NowReadThis Project 1 Prompt
 Colin Malcolm's Project 1 Prompt. 
 
 App Name: NowReadThis
