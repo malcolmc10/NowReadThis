@@ -1,10 +1,11 @@
 # Project Overview
  
 
-# App Name: NowReadThis
+# App Name: 
+NowReadThis
 
 # What does this app do: 
-Some people are like me and go through 100's of articles a week. There comes a time when you need something new to read and do not know what to select. The "NowReadThis" application will allow the user to find new articles based off recent popular news and genre, listing 5 seletions the user may find interesting. The applications relationship with the API allows the site to have access to a plethorea of articles allowing the user to have the opportunity to be introduced to works they were not familiar with in the past. 
+Some people are like me and go through 100's of articles a week. There comes a time when you need something new to read and do not know what to select. The "NowReadThis" application will allow the user to find new articles based off recent popular news and genre, listing 4 seletions the user may find interesting. The applications relationship with the API allows the site to have access to a plethorea of articles allowing the user to have the opportunity to be introduced to works they were not familiar with in the past. 
 
 #API: https://newsapi.org/docs
 
@@ -18,7 +19,7 @@ Web: https://imgur.com/s9ATiGV
 
 # MVP: 
 1. It will include a drop down menu that will allow the user to select a genre and an input for a user to search for something specifc.
-2. Once the search is complete the search will show 4 selections along with its Title, Author, and small description.
+2. Once the search is complete the search will show 4 selections along with its Title and Author.
 3. If the user is not satisfied with the selections, they will be able to refresh the search with it showing 4 new selections. 
 
 
