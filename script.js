@@ -1,73 +1,58 @@
-// Set the API.
 
-const getOption = async () => {
-
-    const url = 'http://newsapi.org/v2/everything?q=Apple&from=2020-05-11sortBy=popularity&apiKey=1bd549b086404134a14c4fa7d447f748'
+const url = 'http://newsapi.org/v2/top-headlines?country=us&apiKey=1bd549b086404134a14c4fa7d447f748'
 
 
-    //Set the try and catch.
+const DOMAIN = 'http://newsapi.org/';
+const API_KEY = '1bd549b086404134a14c4fa7d447f748';
+const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&s=`;
+
+
+let input = document.querySelector(`#find`)
+
+let button = document.querySelector(`#search`)
+
+button.addEventListener('click', (e) => {
+
+    let inputValue = input.value
+
+    getSearch(inputValue);
+
+});
+
+async function getSearch(iValue) {
     try {
+        let newsData = await axios.get(BASE_URL + iValue)
+        // console.log(newsData.data.search);
 
-        let response = await axios.get(url)
-        // console.log(response.data)
-
-        let newsList = Object.keys(response.data)
-
-        let select = document.querySelector('select')
-
-        newsList.forEach((news) => {
-
-            let option = document.createElement('option')
-
-            option.value = `${news}`
-
-            option.text = `${news}`
-
-            select.append(option)
-
-
-        })
+        for(let i = 0; i < 4; i++) {
+            let newsTitle = newsData.data.Search[i].title 
+            let newsImage = newsData.data.Search[i].urlToImage
+            // console.log(newsTitle, newsImage)
+        }
+        
 
     } catch (error) {
-
-        console.log(`This Is Not The News You Are Looking For. Please Search Again. ${error}`)
+        
+        console.log(`This is not the news you are looking for. ${error}`)
 
     }
-
-
 }
 
-// Set up the input.
-getOption()
 
+// function renderList(article) {
 
-function optionValue(e) {
+//     article.forEach((newArticle) => {
 
-    e.preventDefault()
+//         const appendArticle = document.querySelector('.listArticle')
 
-    let select = document.querySelector(genre)
+//         const img = document.createElement('img')
 
-    let value = select.value
+//         const title = document.createElement('p')
 
-    // console.log(value)
+//         dataView.classList.add()
+//     })
 
-    // getNews(value)
-
-}
-//set up the Event Listener
-// const form = document.querySelector('form')
-// form.addEventListener('submit', optionValue)
-
-// Place a value into the API endpoint and make a request.
-
-// Images. Create the tags for the images,src,and then append.
-
-//remove old pic.
-
-//
-
-
-
+// }
 
 
 
