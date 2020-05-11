@@ -1,20 +1,15 @@
-
+h3 {
+    font-weight: 20px; 
+}
 
 body {
-
     font-family: 'Noto Sans JP', sans-serif;
     color: #FF45B8;
     font-size: 50px;
     text-align: center;
     background-color: black;
+
 }
-
-h3 {
-
-    font-weight: 20px;
-    
-}
-
 span {
     font-size: 70px;
     color: #40E9F2;
