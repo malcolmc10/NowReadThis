@@ -3,9 +3,10 @@
 body {
 
     font-family: 'Noto Sans JP', sans-serif;
-    color: #8439A9;
+    color: #FB4CCE;
     font-size: 50px;
     text-align: center;
+    background-color: black;
 }
 
 h3 {
@@ -21,17 +22,29 @@ span {
 
 footer {
 
-    font-size: 10px;
+    font-size: 22px;
+    font-weight: 20px;
+    font-variant-caps: all-small-caps;
 
+}
+
+form {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #8439A9;
+    text-align: center;
+    display: inline-block;
 }
 
 
 input {
     font-size: 20px;
-    color: #8439A9;
+    color: #FB4CCE;
     text-align: center;
     background-color: aquamarine;
     font-family: 'Noto Sans JP', sans-serif;
+    margin: 30px;
+    display: inline-block;
+    
 
 
 }
