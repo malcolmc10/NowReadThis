@@ -48,7 +48,7 @@ Drop down menu: 1 hour 30 mins
 API added and randomization: 5 hours
 Adding rendering and remove functions 3 hours.
 Testing, Adding CSS features: 3 hours
-Total of 21:30 hours
+Total Time Estimated is 30 hours with final touches.
 
 API Snippet:
  "status": "ok",
