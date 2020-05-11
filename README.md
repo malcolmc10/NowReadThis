@@ -8,7 +8,7 @@ Some people are like me and go through 100's of articles a week. There comes a t
 
 #API: https://newsapi.org/docs
 
-# Sample Endpoint:  http://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=1bd549b086404134a14c4fa7d447f748
+Sample Endpoint:  http://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=1bd549b086404134a14c4fa7d447f748
 
 
 
@@ -22,18 +22,18 @@ Web: https://imgur.com/s9ATiGV
 3. If the user is not satisfied with the selections, they will be able to refresh the search with it showing 4 new selections. 
 
 
-# PMVP: 
+# Post MVP: 
 1. Like to add at least 5 more endpoints to broaden the conetent types 
 2. Adding media space for adds. This will allow monetization in the future
 3.  Leave a review. I want the users to leave their thoughts on the selections they are selecting for other users to use. 
 4.  I want to add a rating system This will allow the user to rate selections that appear. 
 
 # Goals:
-Monday 5/11:Pseudocode, Build the Core App structure, (HTML and CSS), create logo.
-Tuesday 5/12: Code fetching from API and add it to the site. 
+Monday 5/11: Code fetching from API and add it to the site.
+Tuesday 5/12: Pseudocode, Build the Core App structure, (HTML and CSS), create logo. 
 Wednesday 5/13: Apply rendering and remove functions for refresh button.
 Thursday: 5/14: Touch up look of sight and finalize functionality. 
-Friday: Present and Pray.
+Friday: Present.
 
 # Priorty Matrix: 
 https://imgur.com/yOGGQj5
