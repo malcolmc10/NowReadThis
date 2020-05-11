@@ -2,6 +2,53 @@
 
 body {
 
-    font-family: 'Permanent Marker', cursive;
-    color: #FB4CCE;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #8439A9;
+    font-size: 50px;
+    text-align: center;
 }
+
+h3 {
+
+    font-weight: 20px;
+    
+}
+
+span {
+    font-size: 70px;
+    color: #ABEAF2;
+}
+
+footer {
+
+    font-size: 10px;
+
+}
+
+
+input {
+    font-size: 20px;
+    color: #8439A9;
+    text-align: center;
+    background-color: aquamarine;
+    font-family: 'Noto Sans JP', sans-serif;
+
+
+}
+
+button {
+    background-color: #8439A9;
+    border: #ABEAF2;
+    color: #ABEAF2;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+a.hover {
+    background-color: #FB4CCE;
+    color: #ABEAF2;
+}
+/* Need to figure out the over. It is not highlighting like it should. */
