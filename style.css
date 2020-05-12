@@ -30,7 +30,6 @@ form {
     text-align: center;
     display: inline-block;
     padding: 10px;
-
 }
 
 
@@ -44,6 +43,8 @@ input {
     font-style: bold;
     border-style: solid;
     border-color: #40E9F2;
+    color: #FF45B8;
+    border-width: thick;
 
 }
 
@@ -58,6 +59,7 @@ button {
     font-size: 29px;
     border-style: solid;
     border-color: #40E9F2;
+    border-width: thick;
     
 }
 
@@ -84,3 +86,10 @@ color: white;
 #logoNow {
     padding-top: 50px;
 }
+
+::placeholder {
+    color: #FF45B8;
+    opacity: 1;
+}
+/* ^found on https://www.w3schools.com/howto/howto_css_placeholder.asp */
+
