@@ -4,7 +4,7 @@ body {
     font-size: 50px;
     text-align: center;
     background-color: black;
-
+    
 }
 
 
@@ -29,32 +29,34 @@ form {
     text-align: center;
     display: inline-block;
     padding: 10px;
+
 }
 
 
 input {
     font-size: 30px;
-    color: #FF45B8;
     text-align: center;
-    background-color: #40E9F2;
+    background-color:black;
     font-family: 'Libre Franklin', sans-serif;
     margin: 30px;
     display: inline-block;
-    font-weight: 20px;
     font-style: bold;
-    
-
+    border-style: solid;
+    border-color: #40E9F2;
 
 }
 
+
+
 button {
-    background-color: #9147FC;
-    border: #40E9F2;
-    color: #40E9F2;
+    background-color: black;
+    color: #FF45B8;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 29px;
+    border-style: solid;
+    border-color: #40E9F2;
     
 }
 
@@ -73,4 +75,5 @@ h5 {
 h6 {
 font-family: 'Libre Franklin', sans-serif;
 color: white;
+
 }
