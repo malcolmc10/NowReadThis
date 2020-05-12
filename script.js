@@ -18,6 +18,8 @@ form.addEventListener('submit', (e) => {
 
     getSearch(inputValue);
 
+
+
 });
 
 
@@ -80,3 +82,4 @@ function removeLastSearch() {
         oldArticles[i].remove()
     }
 }
+

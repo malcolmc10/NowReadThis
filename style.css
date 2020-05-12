@@ -101,7 +101,7 @@ color: white;
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 15px;
     flex-wrap: wrap;
     
 }
@@ -112,5 +112,10 @@ img {
 
 #dropdown {
     display: inline-block;
+    border-style: solid;
+    border-color: #40E9F2;
+    color: #FF45B8;
+    background-color: black;
+    border-width: thick;
 
 }
