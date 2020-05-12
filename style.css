@@ -4,6 +4,7 @@ body {
     font-size: 50px;
     text-align: center;
     background-color: black;
+    background-image: url('NOWREADTHIS-WEBSITE-BACKGROUND.jpg');
     
 }
 
@@ -96,3 +97,5 @@ color: white;
     align-items: center;
     width: auto;
 }
+
+
