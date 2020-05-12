@@ -6,9 +6,6 @@ body {
     background-color: black;
     background-image: url('NOWREADTHIS-WEBSITE-BACKGROUND.jpg');
     
-
-
-    
 }
 
 
@@ -28,7 +25,7 @@ footer {
     margin-top: 100px;
 }
 
-form {
+#search-section {
     font-family: 'Libre Franklin', sans-serif;
     color: #9147FC;
     text-align: center;
@@ -67,11 +64,13 @@ button {
     
 }
 
-/* a.hover {
-    background-color: #FF45B8;
+#search:hover {
+    background-color: black;
     color: #40E9F2;
-} */
-/* Need to figure out the over. It is not highlighting like it should. */
+    border-style: solid;
+    border-color: #FF45B8;
+    border-width: thick;
+}
 
 
 h5 {
@@ -104,11 +103,14 @@ color: white;
     margin: 10px;
     font-size: 20px;
     flex-wrap: wrap;
-    /* height: 800px; */
-    /* align-content: space-around; */
+    
 }
 
 img {
     height: 200px;
 }
 
+#dropdown {
+    display: inline-block;
+
+}
