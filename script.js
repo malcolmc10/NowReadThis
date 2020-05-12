@@ -1,5 +1,5 @@
 
-const DOMAIN = 'http://newsapi.org/v2/top-headlines?country=us&';
+const DOMAIN = 'http://newsapi.org/v2/everything?country=us&';
 const API_KEY = '1bd549b086404134a14c4fa7d447f748';
 const BASE_URL = `https://cors-anywhere.herokuapp.com/${DOMAIN}apikey=${API_KEY}&s=`;
 
