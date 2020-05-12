@@ -62,12 +62,12 @@ function renderList(article) {
 
 }
 
-function removeLastSearch() {
-    let oldArticles =document.querySelectorAll('.listArticles')
-    console.log(oldArticles)
+// function removeLastSearch() {
+//     let oldArticles =document.querySelectorAll('.listArticles')
+//     console.log(oldArticles)
 
-    for(let i =0; i < oldArticles.length; i++) {
+//     for(let i =0; i < oldArticles.length; i++) {
 
-        oldArticles[i].remove()
-    }
-}
+//         oldArticles[i].remove()
+//     }
+// }

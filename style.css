@@ -6,6 +6,9 @@ body {
     background-color: black;
     background-image: url('NOWREADTHIS-WEBSITE-BACKGROUND.jpg');
     
+
+
+    
 }
 
 
@@ -76,6 +79,7 @@ h5 {
     font-weight: 20px; 
     font-size: 30px;
     
+    
 }
 
 h6 {
@@ -93,18 +97,18 @@ color: white;
     color: #FF45B8;
 }
 
-.listArticles {
-    display: flex;
+#listArticles {
+    display: inline-block;
     justify-content: center;
-    align-items: center;
     padding: 10px;
     margin: 10px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    /* height: 800px; */
+    /* align-content: space-around; */
 }
 
 img {
     height: 200px;
 }
 
-section {
-    font-size: 20px;
-}
