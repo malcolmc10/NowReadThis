@@ -1,5 +1,5 @@
 body {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     color: #FF45B8;
     font-size: 50px;
     text-align: center;
@@ -9,7 +9,7 @@ body {
 
 
 span {
-    font-size: 70px;
+    font-style: italic;
     color: #40E9F2;
 
 }
@@ -19,11 +19,12 @@ footer {
     font-size: 22px;
     font-weight: 20px;
     font-variant-caps: all-small-caps;
-
+    padding: 20px;
+    
 }
 
 form {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     color: #9147FC;
     text-align: center;
     display: inline-block;
@@ -32,13 +33,15 @@ form {
 
 
 input {
-    font-size: 20px;
+    font-size: 30px;
     color: #FF45B8;
     text-align: center;
     background-color: #40E9F2;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     margin: 30px;
     display: inline-block;
+    font-weight: 20px;
+    font-style: bold;
     
 
 
@@ -62,7 +65,12 @@ a.hover {
 /* Need to figure out the over. It is not highlighting like it should. */
 
 
-h3 {
+h5 {
     
     font-weight: 20px; 
+}
+
+h6 {
+font-family: 'Libre Franklin', sans-serif;
+color: white;
 }

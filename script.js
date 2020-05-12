@@ -36,20 +36,20 @@ async function getSearch(iValue) {
 }
 
 
-// function renderList(article) {
+function renderList(article) {
 
-//     article.forEach((newArticle) => {
+    article.forEach((newArticle) => {
 
-//         const appendArticle = document.querySelector('.listArticle')
+        const appendArticle = document.querySelector('.listArticle')
 
-//         const img = document.createElement('img')
+        const img = document.createElement('img')
 
-//         const title = document.createElement('p')
+        const title = document.createElement('p')
 
-//         dataView.classList.add()
-//     })
+        dataView.classList.add()
+    })
 
-// }
+}
 
 
 
