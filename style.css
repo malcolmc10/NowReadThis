@@ -91,9 +91,8 @@ color: white;
     color: #FF45B8;
 }
 
-/* .listArticles {
+.listArticles {
     display: inline-block;
     align-items: center;
-    width: 400px;
-    height: 200px;
-} */
+    width: auto;
+}

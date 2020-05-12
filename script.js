@@ -9,8 +9,8 @@ let articleList = document.querySelector('#listArticles')
 let input = document.querySelector(`#find`)
 // console.log()
 let form = document.querySelector(`form`)
-console.log(form)
-form.addEventListener('click', (e) => {
+// console.log(form)
+form.addEventListener('submit', (e) => {
     e.preventDefault()
 
     // console.log("sfsgdfg")
@@ -27,7 +27,7 @@ async function getSearch(iValue) {
     let response = await axios.get(BASE_URL + iValue)
     // console.log(newsData);
     let newsData = response.data.articles
-    console.log(newsData)
+    // console.log(newsData)
 
     for (let i = 0; i < 4; i++) {
         // let newsTitle = newsData.data.articles[i].title 
@@ -52,12 +52,12 @@ function renderList(article) {
     const title = document.createElement('p')
     title.innerText = article.title
     articleList.appendChild(title)
-    console.log(articleList)
+    // console.log(articleList)
 
     const image = document.createElement('img')
     image.src = article.urlToImage
     articleList.appendChild(image)
-    console.log()
+    // console.log()
 
 
 }
