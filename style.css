@@ -12,8 +12,10 @@ body {
 span {
     font-style: italic;
     color: #40E9F2;
+    
 
 }
+
 
 footer {
     background-color: #40E9F2;
@@ -72,6 +74,18 @@ button {
     border-width: thick;
 }
 
+#refresh {
+    background-color: black;
+    color: #40E9F2;
+    border-style: none;
+    /* border-color: #40E9F2; */
+    /* border-width: thick; */
+    font-size: 20px;
+    /* border-radius: 50%; */
+    font-style: bold;
+    margin: 30px;
+}
+
 
 h5 {
     
@@ -112,10 +126,10 @@ img {
 
 #dropdown {
     display: inline-block;
-    border-style: solid;
-    border-color: #40E9F2;
+    border-style: none;
     color: #FF45B8;
     background-color: black;
-    border-width: thick;
+    font-size: 20px;
 
 }
+

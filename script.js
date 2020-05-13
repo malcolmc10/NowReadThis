@@ -41,24 +41,56 @@ async function getSearch(iValue) {
         // removeLastSearch()
         renderList(newsData[i])
     }
-    
+
 
     // } catch (error) {
 
     //     console.log(`This is not the news you are looking for. ${error}`)
 
-    }
+
+    
+
+        // let response = await axios.get(url)
+        // // console.log(response.data)
+
+        // let newsList = Object.keys(response.data)
+
+        // let select = document.querySelector('select')
+
+        // newsList.forEach((news) => {
+
+        //     let option = document.createElement('option')
+
+        //     option.value = `${author}`
+
+        //     option.text = `${author}`
+
+        //     select.append(option)
+
+
+        // })
+
+
+}
 
 
 function renderList(article) {
 
-    
 
     // console.log(article)
-    const title = document.createElement('p')
-    title.innerText = article.title
+
+    const title = document.createElement('div')
+    title.innerHTML = '<a href="${article.url}">${article.title}</a>'
+    // title.innerHTML = '<a href="${url}">${title}</a>'
     articleList.appendChild(title)
     // console.log(articleList)
+
+
+    const image = document.createElement('img')
+    image.src = article.urlToImage
+    articleList.appendChild(image)
+    // console.log()
+
 
     articleList.append(title)
 
@@ -66,14 +98,10 @@ function renderList(article) {
     name.innerText = article.author
     articleList.appendChild(name)
 
-    // const connect = document.createElement('p')
+    // const connect = document.createElement('link')
     // name.innerText = article.url
     // articleList.appendChild(connect)
 
-    const image = document.createElement('img')
-    image.src = article.urlToImage
-    articleList.appendChild(image)
-    // console.log()
 
 
 
@@ -91,10 +119,39 @@ function removeLastSearch() {
         // while (oldArticles.lastChild) {
         //     oldArticles.removeChild(oldArticles.lastChild)
         // }
-    
-    
-    // oldArticles[i].remove()
-    // }
 
+
+        // oldArticles[i].remove()
+        // }
+
+    }
 }
-}
+
+
+
+// articleList.forEach(article => {
+//     const title = document.createElement('div')
+//     DataView.className = 'stuff'
+//     title.innerHTML = '<a href="${article.url}">${article.title}</a>'
+//     document.getElementsByClassName('stuff-section')[0].appendChild(div)
+//     // articleList.appendChild(title)
+//     // console.log(articleList)
+
+
+//     const image = document.createElement('img')
+//     image.src = article.urlToImage
+//     articleList.appendChild(image)
+//     // console.log()
+
+
+//     articleList.append(title)
+
+//     const name = document.createElement('p')
+//     name.innerText = article.author
+//     articleList.appendChild(name)
+
+//     // const connect = document.createElement('link')
+//     // name.innerText = article.url
+//     // articleList.appendChild(connect)
+
+// } )

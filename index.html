@@ -40,18 +40,26 @@
 
     <div class="search-section">
         
-        <select id="dropdown">
+        <!-- <select id="dropdown">
             <option value="Wall Street Journal">Wall Street Journal</option>
             <option value="New York Times">New York Times</option>
-        </select>
+        </select> -->
         
         <form>
+
+            <select id="dropdown">
+                <option id="option1" value="Wall Street Journal">Wall Street Journal</option>
+                <option id="option2" value="New York Times">New York Times</option>
+            </select>
+
             <!-- <select name="genre" id="genre">_</select> -->
             <input type="text" id="find" placeholder="Search Here" required>
             <button type="submit" id="search">Explore</button>
+
+            <button id="refresh" onClick="window.location.reload();">Refresh</button>
+        <!-- found out how to do this properly via stack-overflow. -->
         </form>
 
-     
 
     </div>
 
