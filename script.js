@@ -32,15 +32,16 @@ async function getSearch(iValue) {
     // console.log(newsData);
     let newsData = response.data.articles
     // console.log(newsData)
+    removeLastSearch()
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < newsData.length; i++) {
         // let newsTitle = newsData.data.articles[i].title 
         // let newsImage = newsData.data.articles[i].urlToImage
         // console.log(newsTitle, newsImage)
         // removeLastSearch()
         renderList(newsData[i])
     }
-    // removeLastSearch()
+    
 
     // } catch (error) {
 
@@ -79,8 +80,9 @@ function renderList(article) {
 }
 
 function removeLastSearch() {
-    let oldArticles = document.querySelectorAll('.listArticles')
-    
+    let oldArticles = document.querySelector('#listArticles')
+    oldArticles.innerHTML = ""
+    console.log('dfgdfgdfgh')
 
     // console.log(oldArticles)
 
