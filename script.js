@@ -4,6 +4,8 @@ const API_KEY = '1bd549b086404134a14c4fa7d447f748';
 const BASE_URL = `https://cors-anywhere.herokuapp.com/${DOMAIN}apikey=${API_KEY}&q=`;
 
 
+
+
 let articleList = document.querySelector('#listArticles')
 
 let input = document.querySelector(`#find`)
@@ -35,26 +37,29 @@ async function getSearch(iValue) {
         // let newsTitle = newsData.data.articles[i].title 
         // let newsImage = newsData.data.articles[i].urlToImage
         // console.log(newsTitle, newsImage)
-
+        // removeLastSearch()
         renderList(newsData[i])
     }
-
+    // removeLastSearch()
 
     // } catch (error) {
 
     //     console.log(`This is not the news you are looking for. ${error}`)
 
-    // }
-}
-
+    }
 
 
 function renderList(article) {
+
+    
+
     // console.log(article)
     const title = document.createElement('p')
     title.innerText = article.title
     articleList.appendChild(title)
     // console.log(articleList)
+
+    articleList.append(title)
 
     const name = document.createElement('p')
     name.innerText = article.author
@@ -63,23 +68,31 @@ function renderList(article) {
     // const connect = document.createElement('p')
     // name.innerText = article.url
     // articleList.appendChild(connect)
-    
+
     const image = document.createElement('img')
     image.src = article.urlToImage
     articleList.appendChild(image)
     // console.log()
 
-    
+
 
 }
 
 function removeLastSearch() {
-    let oldArticles =document.querySelectorAll('.listArticles')
-    console.log(oldArticles)
+    let oldArticles = document.querySelectorAll('.listArticles')
+    
 
-    for(let i =0; i < oldArticles.length; i++) {
+    // console.log(oldArticles)
 
-        oldArticles[i].remove()
-    }
+    for (let i = 0; i < oldArticles.length; i++) {
+
+        // while (oldArticles.lastChild) {
+        //     oldArticles.removeChild(oldArticles.lastChild)
+        // }
+    
+    
+    // oldArticles[i].remove()
+    // }
+
 }
-
+}
