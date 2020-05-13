@@ -7,6 +7,12 @@ const BASE_URL = `https://cors-anywhere.herokuapp.com/${DOMAIN}apikey=${API_KEY}
 
 
 let articleList = document.querySelector('#listArticles')
+let choice1 = document.querySelector("#dropdown")
+let choice1Value = ""
+choice1.addEventListener('change', () => {
+    choice1Value = choice1.value
+    console.log(choice1.value)
+})
 
 let input = document.querySelector(`#find`)
 // console.log()
@@ -18,7 +24,7 @@ form.addEventListener('submit', (e) => {
     // console.log("sfsgdfg")
     let inputValue = input.value;
 
-    getSearch(inputValue);
+    getSearch(inputValue, choice1Value);
 
 
 
@@ -26,10 +32,17 @@ form.addEventListener('submit', (e) => {
 
 
 
-async function getSearch(iValue) {
+async function getSearch(iValue, choice1Value) {
+    // console.log(iValue, choice1Value)
+    
     // try {
+        const DOMAIN = `http://newsapi.org/v2/everything?domains=${choice1Value}&`;
+        const API_KEY = '1bd549b086404134a14c4fa7d447f748';
+        const BASE_URL = `https://cors-anywhere.herokuapp.com/${DOMAIN}apikey=${API_KEY}&q=`;
+    // console.log(`${DOMAIN}`)
+    console.log(BASE_URL + iValue)
     let response = await axios.get(BASE_URL + iValue)
-    // console.log(newsData);
+    console.log(response);
     let newsData = response.data.articles
     // console.log(newsData)
     removeLastSearch()
@@ -76,11 +89,15 @@ async function getSearch(iValue) {
 
 function renderList(article) {
 
+  
+
 
     // console.log(article)
 
     const title = document.createElement('div')
-    title.innerHTML = '<a href="${article.url}">${article.title}</a>'
+    // title.classList.add("linkUp")
+    title.className = "linkUp"
+    title.innerHTML = `<a href="${article.url}">${article.title}</a>`
     // title.innerHTML = '<a href="${url}">${title}</a>'
     articleList.appendChild(title)
     // console.log(articleList)
@@ -110,7 +127,7 @@ function renderList(article) {
 function removeLastSearch() {
     let oldArticles = document.querySelector('#listArticles')
     oldArticles.innerHTML = ""
-    console.log('dfgdfgdfgh')
+    // console.log('dfgdfgdfgh')
 
     // console.log(oldArticles)
 
