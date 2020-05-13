@@ -78,12 +78,14 @@ button {
     background-color: black;
     color: #40E9F2;
     border-style: none;
-    /* border-color: #40E9F2; */
-    /* border-width: thick; */
     font-size: 20px;
-    /* border-radius: 50%; */
     font-style: bold;
     margin: 30px;
+}
+
+#refresh:hover {
+    background-color: black;
+    color: #FF45B8;
 }
 
 
