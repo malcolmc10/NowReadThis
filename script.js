@@ -58,20 +58,20 @@ async function getSearch(iValue, choice1Value) {
 
 function renderList(article) {
 
-
+    const articleWrapper = document.createElement('div')
 
     const title = document.createElement('div')
 
     title.className = "linkUp"
     title.innerHTML = `<a href="${article.url}">${article.title}</a>`
 
-    articleList.appendChild(title)
+    articleWrapper.appendChild(title)
 
 
 
     const image = document.createElement('img')
     image.src = article.urlToImage
-    articleList.appendChild(image)
+    articleWrapper.appendChild(image)
 
 
 
@@ -79,7 +79,9 @@ function renderList(article) {
 
     const name = document.createElement('p')
     name.innerText = article.author
-    articleList.appendChild(name)
+    articleWrapper.appendChild(name)
+
+    articleList.appendChild(articleWrapper)
 
 }
 
