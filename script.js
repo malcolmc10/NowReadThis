@@ -70,6 +70,7 @@ function renderList(article) {
 
 
     const image = document.createElement('img')
+    // image.className = "linkUp"
     image.src = article.urlToImage
     articleList.appendChild(image)
 
@@ -78,6 +79,7 @@ function renderList(article) {
     articleList.append(title)
 
     const name = document.createElement('p')
+    // name.className = "linkUp"
     name.innerText = article.author
     articleList.appendChild(name)
 

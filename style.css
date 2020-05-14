@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Libre Franklin', sans-serif;
     color: #FF45B8;
@@ -116,22 +121,13 @@ color: white;
     display: inline-block;
     justify-content: center;
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 30px;
     font-size: 15px;
     flex-wrap: wrap;
     color: white;
-    width: 100%;
-    height: 500px;
-    align-content: stretch;
+    align-content: center;
     
 }
-
-/* .container {
-    width: 100%;
-    height: 500px;
-    align-content: stretch;
-
-} */
 
 img {
     height: 200px;
@@ -147,5 +143,4 @@ img {
 
 .linkUp a {
     color: white;
-
 }
