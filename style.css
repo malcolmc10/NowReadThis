@@ -119,21 +119,22 @@ color: white;
 
 #listArticles {
     display: flex;
-    align-content: space-around;
+    align-content: space-a;
     padding: 10px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 15px;
     color: white;
     /* flex-flow: row; */
     /* flex-direction: column; */
     flex-wrap: wrap;
-     width: 100%;   
+     width: 100%; 
+     word-wrap: break-word;  
 }
 
-.articleWrapper {
-    width: 35%;
-    margin-bottom: 20%;
-
+.article-wrapper {
+    width: 30%;
+    margin-bottom: 10%;
+    word-wrap: break-word;
 }
 
 .article-wrapper img {
@@ -150,5 +151,6 @@ color: white;
 
 .linkUp a {
     color: white;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
