@@ -94,13 +94,13 @@ button {
 }
 
 
-h5 {
+/* h5 {
     
     font-weight: 20px; 
     font-size: 30px;
     
     
-}
+} */
 
 h6 {
 font-family: 'Libre Franklin', sans-serif;
@@ -121,11 +121,8 @@ color: white;
     display: flex;
     align-content: space-a;
     padding: 10px;
-    /* margin-bottom: 30px; */
     font-size: 15px;
     color: white;
-    /* flex-flow: row; */
-    /* flex-direction: column; */
     flex-wrap: wrap;
      width: 100%; 
      word-wrap: break-word;  
