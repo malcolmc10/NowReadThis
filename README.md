@@ -29,26 +29,31 @@ Web: https://imgur.com/s9ATiGV
 3.  Leave a review. I want the users to leave their thoughts on the selections they are selecting for other users to use. 
 4.  I want to add a rating system This will allow the user to rate selections that appear. 
 
-# Goals:
-Monday 5/11: Code fetching from API and add it to the site.
-Tuesday 5/12: Pseudocode, Build the Core App structure, (HTML and CSS), create logo. 
-Wednesday 5/13: Apply rendering and remove functions for refresh button.
-Thursday: 5/14: Touch up look of sight and finalize functionality. 
-Friday: Present.
+# Goals
+
+|  Day | Deliverable | Status
+|---|---| ---|
+|May 11| Project Prompt,fetch API data, logo | Incomplete
+|May 12| Build Core APP using HTML and CSS | Incomplete
+|May 13| Apply Rendering and remove functions and refresh button | Incomplete
+|May 14| Touch up and finalize css | Incomplete
+|May 15| Presentation | Incomplete
+
 
 # Priorty Matrix: 
 https://imgur.com/yOGGQj5
 
 # Time Frames:
 
-Pseudocode: 2 hour
-logo: 1 hour 30 mins
-HTML: 3 hour
-CSS: 3 hours
-Input: 1 hour
-Drop down menu: 1 hour 30 mins
-API added and randomization: 5 hours
-Adding rendering and remove functions 3 hours.
-Testing, Adding CSS features: 3 hours
-Total Time Estimated is 30 hours with final touches.
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| logo | L | 1:30hrs| hrs | hrs |
+| HTML | H | 3hrs| hrs | hrs |
+| CSS | H | 3hrs| hrs | hrs |
+| Inputs | H | 1hrs| hrs | hrs |
+| Drop Down | H | 1:30hrs| hrs | hrs |
+| API added | H | 5hrs| hrs | hrs |
+| Testing | H | 3hrs| hrs | hrs |
+| Total | H | hrs| hrs | hrs |
 
