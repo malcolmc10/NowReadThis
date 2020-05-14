@@ -30,7 +30,7 @@ form.addEventListener('submit', (e) => {
 
 });
 
-
+// The code below represents the the searching and the connecting of the API to the website. 
 
 async function getSearch(iValue, choice1Value) {
 
@@ -55,6 +55,7 @@ async function getSearch(iValue, choice1Value) {
 
 }
 
+// The code below represents each of the articles that appear on the page.
 
 function renderList(article) {
 
@@ -78,6 +79,8 @@ function renderList(article) {
     articleList.appendChild(articleWrapper)
 
 }
+
+// Below is the remove function to have the older articles disappear.
 
 function removeLastSearch() {
     let oldArticles = document.querySelector('#listArticles')
