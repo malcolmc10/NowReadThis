@@ -119,14 +119,16 @@ color: white;
 
 #listArticles {
     display: inline-block;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-content: space-between;
     padding: 10px;
     margin-bottom: 30px;
     font-size: 15px;
-    flex-wrap: wrap;
     color: white;
-    align-content: center;
-    
+    /* flex-flow: row; */
+    flex-direction: column;
+    flex-wrap: wrap;
+        
 }
 
 img {
