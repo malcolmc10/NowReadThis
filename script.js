@@ -21,7 +21,7 @@ let form = document.querySelector(`form`)
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    
+
     let inputValue = input.value;
 
     getSearch(inputValue, choice1Value);
@@ -59,28 +59,22 @@ async function getSearch(iValue, choice1Value) {
 function renderList(article) {
 
     const articleWrapper = document.createElement('div')
+    articleWrapper.classList.add('article-wrapper')
 
     const title = document.createElement('div')
-
     title.className = "linkUp"
     title.innerHTML = `<a href="${article.url}">${article.title}</a>`
 
     articleWrapper.appendChild(title)
 
-
-
     const image = document.createElement('img')
     image.src = article.urlToImage
     articleWrapper.appendChild(image)
 
-
-
-    articleList.append(title)
-
     const name = document.createElement('p')
     name.innerText = article.author
     articleWrapper.appendChild(name)
-
+    console.log(articleWrapper)
     articleList.appendChild(articleWrapper)
 
 }

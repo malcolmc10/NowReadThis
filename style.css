@@ -10,7 +10,7 @@ body {
     text-align: center;
     background-color: black;
     background-image: url('NOWREADTHIS-WEBSITE-BACKGROUND.jpg');
-    
+    width: 100vw;
 }
 
 
@@ -118,20 +118,25 @@ color: white;
 }
 
 #listArticles {
-    display: inline-block;
-    justify-content: space-evenly;
-    align-content: space-between;
+    display: flex;
+    align-content: space-around;
     padding: 10px;
     margin-bottom: 30px;
     font-size: 15px;
     color: white;
     /* flex-flow: row; */
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
-        
+     width: 100%;   
 }
 
-img {
+.articleWrapper {
+    width: 35%;
+    margin-bottom: 20%;
+
+}
+
+.article-wrapper img {
     height: 200px;
 }
 
@@ -146,3 +151,4 @@ img {
 .linkUp a {
     color: white;
 }
+
