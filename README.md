@@ -52,12 +52,42 @@ https://imgur.com/yOGGQj5
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| logo | L | 1:30hrs| 1 hrs | hrs |
-| HTML | H | 3hrs| 30 mins | hrs |
-| CSS | H | 3hrs| 5 hrs | hrs |
-| Inputs | H | 1hrs| 5 hrs | hrs |
-| Drop Down | H | 1:30hrs| 5 hrs | hrs |
-| API added | H | 5hrs| 5 hrs | hrs |
-| Testing | H | 3hrs| 2 hrs | hrs |
-| Total | H |18 hrs| 23:30 hrs | hrs |
+| logo | L | 1:30hrs| 1 hrs | 1 hrs |
+| HTML | H | 3hrs| 30 mins | 30 mins |
+| CSS | H | 3hrs| 5 hrs | 5 hrs |
+| Inputs | H | 1hrs| 5 hrs |5 hrs |
+| Drop Down | H | 1:30hrs| 5 hrs |5 hrs |
+| API added | H | 5hrs| 5 hrs |5 hrs |
+| Testing | H | 3hrs| 2 hrs |2 hrs |
+| Total | H |18 hrs| 23:30 hrs |23:30 hrs |
 
+
+
+# Changes
+1. Originally I wanted to only show 4 articles at al time. I changed this because it limited the user options. They may be looking for something more specific and limiting them to 4 options can prevent them from using the tool.
+
+
+
+
+# Snippet:
+
+function renderList(article) {
+
+    const articleWrapper = document.createElement('div')
+    articleWrapper.classList.add('article-wrapper')
+
+    const title = document.createElement('div')
+    title.className = "linkUp"
+    title.innerHTML = `<a href="${article.url}">${article.title}</a>`
+
+    articleWrapper.appendChild(title)
+
+    const image = document.createElement('img')
+    image.src = article.urlToImage
+    articleWrapper.appendChild(image)
+
+    const name = document.createElement('p')
+    name.innerText = article.author
+    articleWrapper.appendChild(name)
+    console.log(articleWrapper)
+    articleList.appendChild(articleWrapper)}
