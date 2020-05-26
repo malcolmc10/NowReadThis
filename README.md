@@ -4,6 +4,9 @@
 # App Name: 
 NowReadThis. 
 
+# Link to Site: 
+https://pages.git.generalassemb.ly/malcolmc10/NowReadThis/
+
 # What does this app do: 
 Some people are like me and go through 100's of articles a week. There comes a time when you need something new to read and do not know what to select. The "NowReadThis" application will allow the user to find new articles based off recent popular news and genre, listing seletions the user may find interesting. The applications relationship with the API allows the site to have access to a plethorea of articles allowing the user to have the opportunity to be introduced to works they were not familiar with in the past. 
 
